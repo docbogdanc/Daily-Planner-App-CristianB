@@ -3,3 +3,4 @@ var dateElem = $('#currentDay');
 var blockDays = $('#container')
 
 dateElem.text(currentDateTime);
+
