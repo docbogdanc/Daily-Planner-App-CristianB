@@ -86,6 +86,11 @@ header {
   background-color: #d3d3d3 !important;
 }
 
+.transparent-input {
+  border: none;
+  background-color: transparent;
+}
+
 .thirdcolumn {
  background-color: aqua !important; 
  text-align: center;
