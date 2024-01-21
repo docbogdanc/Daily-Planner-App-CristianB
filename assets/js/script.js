@@ -1,7 +1,7 @@
 var currentDate = dayjs().format('[Today is : ] dddd[,] DD-MM-YYYY');
 var dateElem = $('#currentDay');
 var currentTime = dayjs().format('hA');
-console.log(currentTime);
+
 var blockDays = $('.table');
 
 // display current date at top page 
@@ -19,49 +19,37 @@ $('.firstcolumn').each(function() {
       var currentParentID = $(this).parent().attr('id');
 
       // change the background of the row to red to mark current time (red row)
-      $('#'+currentParentID).children().eq(1).removeClass('secondcolumn').addClass('secondcolumnRed');
+      $('#'+currentParentID).children().eq(1).removeClass('past').addClass('present');
     
       // calculate how many hours slot are after current one (red row)
       var numberOfSiblingsFollowingRed = $('#'+currentParentID).nextAll().length;  
-      console.log(numberOfSiblingsFollowingRed);
       
       // loop through all siblings following the red row
       for (i=0 ; i<numberOfSiblingsFollowingRed ; i++) {
         // target each sibling second child and change the background to green
-        $('#'+currentParentID).nextAll().eq(i).children().eq(1).removeClass('secondcolumn').addClass('secondcolumnGreen');
-      }
-
+        $('#'+currentParentID).nextAll().eq(i).children().eq(1).removeClass('past').addClass('future');
+      };
     };
+});
 
-})
-
+// Get data from local storage
 var savedValue = localStorage.getItem('dataKey1');
-console.log(savedValue);
-// Parse the retrieved data if necessary
-// var parsedData = JSON.parse(savedValue);
-// Set the value of the form input field
+// Add data from local storage inside the text field 
 $('#input9AM').val(savedValue);
-// Add an event listener to detect changes made by the user
+// Add an event listener to detect changes of the text filed made by the user 
 $('#input9AM').on('input', function() {
-  // Update the local storage with the new value
+  // Update the local storage with the new value of text field
   localStorage.setItem('dataKey1', $(this).val());
 });
 
 
 
-// save the text introdduced throgh input in local storage
+// Function to save the text introdduced in the text field to local storage
 function submitForm() {
     // Code to handle the input field value
   var inputValue =  $('#input9AM').val();
   // Save data to local storage
   localStorage.setItem('dataKey1', inputValue);
-}
+};
 
-// $('#text9AM').submit(function(event) {
-//   event.preventDefault();
-
-//   var inputValue = $('#text9AM').val();
-
-
-// });
 

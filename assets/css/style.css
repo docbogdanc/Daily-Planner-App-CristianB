@@ -44,17 +44,17 @@ header {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3 !important;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ff6961 !important;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #77dd77 !important;
   color: white;
 }
 
@@ -62,8 +62,8 @@ header {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: #06aed5 !important; 
+
 }
 
 .saveBtn i:hover {
@@ -81,15 +81,19 @@ header {
 .firstcolumn {
   border-bottom: solid 1px black !important;
   text-align: right;
+  vertical-align: middle !important;
+  
+
 }
 
-/* styling for second column ; need to overwright Bootstrap styling*/
+styling for second column ; need to overwright Bootstrap styling
 .secondcolumn{
   display: flex;
   flex-direction: column;
-  height: 100px; /* Set an initial height for the container */
+  height: 75px; /* Set an initial height for the container */
   width : 100%;
   background-color: #d3d3d3 !important;
+  color: white;
 }
 
 /* style for text input inside the second column */
@@ -111,13 +115,4 @@ textarea {
  text-align: center;
 }
 
-/* style for class matching the current time - red */
-.secondcolumnRed {
-  background-color: red !important;
-}
-
-/* style for sibling following the current class - green */
-.secondcolumnGreen {
-  background-color: green !important;
-}
 
