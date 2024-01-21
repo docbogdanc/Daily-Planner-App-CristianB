@@ -35,7 +35,7 @@ The code is free to be used according to the licence condition (please see the l
 
   
 - Bootstrap 
-  - Grid
+  - Table
 
 - Xpert Learning Assistant - the Bootcamp Course AI, used for helping with some of the javascript syntax
  
