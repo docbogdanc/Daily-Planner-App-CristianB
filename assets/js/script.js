@@ -32,24 +32,30 @@ $('.firstcolumn').each(function() {
     };
 });
 
-// Get data from local storage
-var savedValue = localStorage.getItem('dataKey1');
-// Add data from local storage inside the text field 
-$('#input9AM').val(savedValue);
+
+// Get data from local storage and populate the fields
+for (var i=1 ; i<=9 ; i++) {
+  var savedValue = localStorage.getItem(`dataKey${i}`);
+  // Add data from local storage inside the text field 
+  var inputID = `#input${i}`;
+  $(inputID).val(savedValue);
+};
 // Add an event listener to detect changes of the text filed made by the user 
-$('#input9AM').on('input', function() {
+$(inputID).on('input', function() {
   // Update the local storage with the new value of text field
-  localStorage.setItem('dataKey1', $(this).val());
+  localStorage.setItem(`dataKey${i}1`, $(this).val());
 });
 
 
 
-// Function to save the text introdduced in the text field to local storage
-function submitForm() {
+// Function to save the text introduced in the text field to local storage
+function submitForm(i) {
     // Code to handle the input field value
-  var inputValue =  $('#input9AM').val();
+  var inputID = `#input${i}`;
+  console.log(inputID);
+  var inputValue =  $(inputID).val();
   // Save data to local storage
-  localStorage.setItem('dataKey1', inputValue);
+  localStorage.setItem(`dataKey${i}`, inputValue);
 };
 
 
