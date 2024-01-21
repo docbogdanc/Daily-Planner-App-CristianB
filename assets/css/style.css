@@ -77,26 +77,35 @@ header {
   margin-right: auto;
 }
 
+/* styling for first column ; need to overwright Bootstrap styling*/
 .firstcolumn {
   border-bottom: solid 1px black !important;
   text-align: right;
 }
 
+/* styling for second column ; need to overwright Bootstrap styling*/
 .secondcolumn{
   background-color: #d3d3d3 !important;
 }
 
+/* style for text input inside the second column */
 .transparent-input {
   border: none;
   background-color: transparent;
 }
 
+/* styling for third column ; need to overwright Bootstrap styling*/
 .thirdcolumn {
  background-color: aqua !important; 
  text-align: center;
 }
 
+/* style for class matching the current time - red */
 .secondcolumnRed {
   background-color: red !important;
 }
 
+/* style for sibling following the current class - green */
+.secondcolumnGreen {
+  background-color: green !important;
+}
