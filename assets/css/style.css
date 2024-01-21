@@ -70,3 +70,20 @@ header {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+
+.firstcolumn {
+  border-bottom: solid 1px black !important;
+}
+
+.secondcolumn{
+  background-color: #d3d3d3 !important;
+}
+
+.thirdcolumn {
+ background-color: aqua !important; 
+ text-align: center;
+}
+
+
+
