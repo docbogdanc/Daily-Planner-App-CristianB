@@ -34,3 +34,34 @@ $('.firstcolumn').each(function() {
     };
 
 })
+
+var savedValue = localStorage.getItem('dataKey1');
+console.log(savedValue);
+// Parse the retrieved data if necessary
+// var parsedData = JSON.parse(savedValue);
+// Set the value of the form input field
+$('#input9AM').val(savedValue);
+// Add an event listener to detect changes made by the user
+$('#input9AM').on('input', function() {
+  // Update the local storage with the new value
+  localStorage.setItem('dataKey1', $(this).val());
+});
+
+
+
+// save the text introdduced throgh input in local storage
+function submitForm() {
+    // Code to handle the input field value
+  var inputValue =  $('#input9AM').val();
+  // Save data to local storage
+  localStorage.setItem('dataKey1', inputValue);
+}
+
+// $('#text9AM').submit(function(event) {
+//   event.preventDefault();
+
+//   var inputValue = $('#text9AM').val();
+
+
+// });
+

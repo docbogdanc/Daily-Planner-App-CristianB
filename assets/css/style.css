@@ -85,6 +85,10 @@ header {
 
 /* styling for second column ; need to overwright Bootstrap styling*/
 .secondcolumn{
+  display: flex;
+  flex-direction: column;
+  height: 100px; /* Set an initial height for the container */
+  width : 100%;
   background-color: #d3d3d3 !important;
 }
 
@@ -92,6 +96,13 @@ header {
 .transparent-input {
   border: none;
   background-color: transparent;
+}
+
+textarea {
+  flex: 1;
+  resize: none; /* Disable textarea resizing */ 
+  width: 100%; /* Set the width of the textarea to 100% of its parent element */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 /* styling for third column ; need to overwright Bootstrap styling*/
@@ -109,3 +120,4 @@ header {
 .secondcolumnGreen {
   background-color: green !important;
 }
+
