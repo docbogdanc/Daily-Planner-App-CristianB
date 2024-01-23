@@ -4,15 +4,6 @@ body {
   line-height: 1;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
 header {
   text-align: center;
   background-color: transparent;
@@ -22,55 +13,7 @@ header {
   padding: 60px;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3 !important;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961 !important;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77 !important;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5 !important; 
-
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
+/* style to keep table at 8/10 from page width */
 .table {
   width: 80%;
   margin-left: auto;
@@ -79,15 +22,13 @@ header {
 
 /* styling for first column ; need to overwright Bootstrap styling*/
 .firstcolumn {
-  border-bottom: solid 1px black !important;
+  border-bottom: dashed 1px black !important;
   text-align: right;
   vertical-align: middle !important;
-  
-
 }
 
-styling for second column ; need to overwright Bootstrap styling
-.secondcolumn{
+/* style for the rows with time in the past - will be changed by JS*/
+.past {
   display: flex;
   flex-direction: column;
   height: 75px; /* Set an initial height for the container */
@@ -96,20 +37,51 @@ styling for second column ; need to overwright Bootstrap styling
   color: white;
 }
 
+/* style for the row with current time - will be added by JS */
+.present {
+  background-color: #ff6961 !important;
+  color: white;
+}
+
+/* style for the rows with time in the future -will be added by JS */
+.future {
+  background-color: #77dd77 !important;
+  color: white;
+}
+
+/* style for area of input text */
+textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  resize: none; /* Disable textarea resizing */ 
+  width: 100%; /* Set the width of the textarea to 100% of its parent element */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
 /* style for text input inside the second column */
 .transparent-input {
   border: none;
   background-color: transparent;
 }
 
-textarea {
-  flex: 1;
-  resize: none; /* Disable textarea resizing */ 
-  width: 100%; /* Set the width of the textarea to 100% of its parent element */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
+/* style for "save" icon area */
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5 !important; 
+  text-align: center;
+  font-size: 30px;
 }
 
-/* styling for third column ; need to overwright Bootstrap styling*/
+.saveBtn i:hover {
+  font-size: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* styling for third column ; need to overwrite Bootstrap styling*/
 .thirdcolumn {
  background-color: aqua !important; 
  text-align: center;

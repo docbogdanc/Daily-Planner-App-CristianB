@@ -9,7 +9,7 @@ Daily Planner App - part of Bootcamp challenge
 
 This Project was created for bootcamp challenge.
 
-It tests the knowledge gained in HTML, CSS, JavaScript, JQuery, and Dayjs during the last weeks, especially the implementation of JavaScript. 
+It tests the knowledge gained in HTML, CSS, JavaScript, JQuery, and Dayjs during the last weeks, especially the implementation of JavaScript. The user is able to add text in every hour slots and by pressing the right "floppydisk" icon the data is saved in the local storage to stay even if the page is refreshed. The current time slot is marked with red color and the future time-slots are colored green.
 
 This is how it looks:
 
@@ -20,7 +20,7 @@ This is how it looks:
 
 ## Installation
 
-The repository is on the GitHub repositories public domain .... and the deployed webpage can be found at .... where it was deployed using GitHub
+The repository is on the GitHub repositories public domain https://github.com/docbogdanc/Daily-Planner-App-CristianB.git and the deployed webpage can be found at https://docbogdanc.github.io/Daily-Planner-App-CristianB/ where it was deployed using GitHub
 
 
 ## Usage
