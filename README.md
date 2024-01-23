@@ -11,8 +11,9 @@ This Project was created for bootcamp challenge.
 
 It tests the knowledge gained in HTML, CSS, JavaScript, JQuery, and Dayjs during the last weeks, especially the implementation of JavaScript. 
 
-This is how it starts:
-![image of results](./assets/images/start.png)
+This is how it looks:
+
+![image of results](./assets/images/screenshot_planner.png)
 
 
 
@@ -34,8 +35,9 @@ The code is free to be used according to the licence condition (please see the l
 - Bootcamp EDX ( a big cheers for bootcamp teachers! ) provided the needed **materials**, the most wanted **inspiration** and the difficult to obtain **motivation**  
 
   
-- Bootstrap 
-  - Table
+- Bootstrap - used for **table** model
+
+        https://getbootstrap.com/docs/5.3/content/tables/
 
 - Xpert Learning Assistant - the Bootcamp Course AI, used for helping with some of the javascript syntax
  
